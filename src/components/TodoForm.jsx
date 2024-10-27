@@ -4,13 +4,6 @@ import { TextInput, Button, StyleSheet, View } from 'react-native';
 function ToDoForm({ addTask }) {
   const [taskText, setTaskText] = useState('');
 
-  const handleSubmit = () => {
-    if (taskText.trim()) {
-      addTask(taskText);
-      setTaskText('');
-    }
-  };
-
   return (
     <View>
       <TextInput
